@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Accueil</title>
+    <style>
+        body{
+            text-align: center;
+            font-family:cursive;
+            font-size: 25px;
+            color:#44566c;
+            background-color:#e7e7e7;
+        }
+        a,input{
+            text-decoration:none;
+            border-radius: 15px;
+            color:#44566c;
+            padding: 10px 10px;
+            background-color:#A2D9CE ;
+        }
+        a{
+            display:block;
+        }
+        form{
+            background-color:#56b4b7;
+            border-radius:40px;
+            position: absolute;
+            left:300px;
+            right:300px;
+        }
+        footer{
+            position:fixed;
+            left:0;
+            bottom:0;
+            color:#44566c;
+            text-align: left;
+            font-size: 15px;
+        }
+        table{
+            width:50%;
+            padding: 20px;
+            border-spacing: 20px;
+        }
+        .left{
+            position:absolute;
+            left:0px;
+        }
+        .right{
+            position:absolute;
+            right:0px;
+        }
+        
+
+    </style>
+    </head>
+    <body>
+        <table style="width:100%;">
+            <tr>
+                <td><img src="logo.jpg"></td>
+                <td>Chercher : <input type="search" /></td>
+                <td><a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="laune.html">Deconnexion</a></td>
+            </tr>
+        </table>
+        <table class="right">
+            <tr>
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="carnet.php">Carnet de Credit</a>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="history.php">Historique d'operations</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="carnet compteur.php">Mon carnet des compteurs</a>
+                </td>
+            </tr>
+            <tr>       
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="four.php">Mon carnet des dettes</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="caisse.php">ma caisse</a>
+                </td>
+            </tr> 
+            <tr>
+                
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="valider payement.php">valider mes payements</a>
+                </td>
+            </tr>
+        </table>
+        <table class="left">
+            <tr> 
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="ajout credit.php">Ajouter un montant</a>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="retranche  credit.php">retrancher un montant</a>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="Ajout client.php">Ajouter un client</a>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="supprimer client.php">Supprimer un client</a>
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="compteurs.php">Gerer mes compteurs d'essence</a>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <a onmouseover="getBigger(this)" onmouseout="getSmaller(this)" href="partie fournisseur.php">Gerer mes dettes</a>
+                </td>
+            </tr>
+            
+            
+                         
+        </table><br><br>
+        <footer>
+            email : 123@gmail.com<br>
+            numero de telephone: 0612345678<br>
+            numero fixe : 0512345678<br>
+            adresse : karia ba mohammed,Taounate,Fes-Meknes,Maroc<br>
+        </footer>
+        <script>
+            
+	        function getSmaller(x){
+		        x.style.padding ="10px 10px";
+	        }
+	        function getBigger(x){
+		        x.style.padding ="13px 13px";
+	        }
+        </script>
+    </body>
+</html>
